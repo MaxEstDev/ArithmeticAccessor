@@ -19,4 +19,16 @@ public:
 	
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "IntegerAccessor", meta =(CompactNodeTitle))
 	static uint8 ByteMaxValue();
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="+="))
+	static void AddByte(UPARAM(ref)uint8& Value, const uint8 Addition);
+
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="-="))
+	static void SubtractByte(UPARAM(ref)uint8& Value, const uint8 Subtract);
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="*="))
+	static void MultiplyByte(UPARAM(ref)uint8& Value, const uint8 Multiplier);
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="/="))
+	static void DivideByte(UPARAM(ref)uint8& Value, const uint8 Divider);
 };

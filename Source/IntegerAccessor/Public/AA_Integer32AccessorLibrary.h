@@ -19,6 +19,18 @@ class INTEGERACCESSOR_API UAA_Integer32AccessorLibrary : public UBlueprintFuncti
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "IntegerAccessor", meta =(CompactNodeTitle))
 	static int32 IntegerMaxValue();
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="+="))
+	static void AddInt(UPARAM(ref)int& Value, const int Addition);
+
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="-="))
+	static void SubtractInt(UPARAM(ref)int& Value, const int Subtract);
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="*="))
+	static void MultiplyInt(UPARAM(ref)int& Value, const int Multiplier);
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="/="))
+	static void DivideInt(UPARAM(ref)int& Value, const int Divider);
 };
 
 

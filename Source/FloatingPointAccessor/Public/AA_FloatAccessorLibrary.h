@@ -39,4 +39,16 @@ class FLOATINGPOINTACCESSOR_API UAA_FloatAccessorLibrary : public UBlueprintFunc
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "FloatingPointAccessor", meta =(CompactNodeTitle))
 	static float FloatMaxValue();
+
+	UFUNCTION(BlueprintCallable, Category = "FloatingPointAccessor", meta=(CompactNodeTitle="+="))
+	static void AddFloat(UPARAM(ref)float& Value, const float Addition);
+
+	UFUNCTION(BlueprintCallable, Category = "FloatingPointAccessor", meta=(CompactNodeTitle="-="))
+	static void SubtractFloat(UPARAM(ref)float& Value, const float Subtract);
+	
+	UFUNCTION(BlueprintCallable, Category = "FloatingPointAccessor", meta=(CompactNodeTitle="*="))
+	static void MultiplyFloat(UPARAM(ref)float& Value, const float Multiplier);
+	
+	UFUNCTION(BlueprintCallable, Category = "FloatingPointAccessor", meta=(CompactNodeTitle="/="))
+	static void DivideFloat(UPARAM(ref)float& Value, const float Divider);
 };

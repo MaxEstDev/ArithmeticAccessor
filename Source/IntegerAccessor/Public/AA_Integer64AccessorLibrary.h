@@ -18,4 +18,16 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "IntegerAccessor", meta =(CompactNodeTitle))
 	static int64 Integer64MaxValue();
+
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="+="))
+	static void AddInt64(UPARAM(ref)int64& Value, const int64 Addition);
+
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="-="))
+	static void SubtractInt64(UPARAM(ref)int64& Value, const int64 Subtract);
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="*="))
+	static void MultiplyInt64(UPARAM(ref)int64& Value, const int64 Multiplier);
+	
+	UFUNCTION(BlueprintCallable, Category = "IntegerAccessor", meta=(CompactNodeTitle="/="))
+	static void DivideInt64(UPARAM(ref)int64& Value, const int64 Divider);
 };

@@ -46,4 +46,24 @@ float UAA_FloatAccessorLibrary::FloatMaxValue()
 	return std::numeric_limits<float>::max();
 }
 
+void UAA_FloatAccessorLibrary::AddFloat(float& Value, const float Addition)
+{
+	Value += Addition;
+}
+
+void UAA_FloatAccessorLibrary::SubtractFloat(float& Value, const float Subtract)
+{
+	Value -= Subtract;
+}
+
+void UAA_FloatAccessorLibrary::MultiplyFloat(float& Value, const float Multiplier)
+{
+	Value *= Multiplier;
+}
+
+void UAA_FloatAccessorLibrary::DivideFloat(float& Value, const float Divider)
+{
+	Value /= Divider;
+}
+
 
