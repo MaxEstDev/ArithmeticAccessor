@@ -1,0 +1,39 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ArithmeticAccessor",
+	"Description": "",
+	"Category": "Math",
+	"CreatedBy": "MaxEstLa",
+	"CreatedByURL": "https://www.maxestla.com/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ArithmeticAccessor",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "FloatingPointAccessor",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "IntegerAccessor",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "VectorAccessor",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
